@@ -1,0 +1,20 @@
+{
+  "resourceType": "Observation",
+  "id": "obs-amh-001",
+  "status": "final",
+  "category": [{"coding": [{"system": "http://terminology.hl7.org/CodeSystem/observation-category", "code": "laboratory"}]}],
+  "code": {
+    "coding": [{"system": "http://loinc.org", "code": "38476-8", "display": "Anti-Mullerian Hormone"}]
+  },
+  "subject": {"reference": "Patient/ptp-8832"},
+  "effectiveDateTime": "2026-03-15T08:30:00Z",
+  "valueQuantity": {
+    "value": 0.8,
+    "unit": "ng/mL",
+    "system": "http://unitsofmeasure.org",
+    "code": "ng/mL"
+  },
+  "interpretation": [
+    {"coding": [{"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation", "code": "L", "display": "Low"}]}
+  ]
+}

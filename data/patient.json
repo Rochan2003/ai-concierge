@@ -1,0 +1,27 @@
+{
+  "resourceType": "Patient",
+  "id": "ptp-8832",
+  "identifier": [
+    {
+      "system": "http://hospital.epic.com/patients",
+      "value": "109843"
+    }
+  ],
+  "name": [{"use": "official", "family": "Doe", "given": ["Jane"]}],
+  "gender": "female",
+  "birthDate": "1990-05-14",
+  "address": [
+    {
+      "city": "Boston",
+      "state": "MA",
+      "postalCode": "02115",
+      "country": "US"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-clinicalDiagnosis",
+      "valueString": "Diminished Ovarian Reserve (DOR)"
+    }
+  ]
+}

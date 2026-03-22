@@ -1,0 +1,20 @@
+{
+  "action_items": [
+    {
+      "clinical_reason": "To assess your ovarian function and help your doctor understand your fertility status, which is important given your diagnosis of Diminished Ovarian Reserve.",
+      "priority": "high",
+      "status": "pending",
+      "task": "Schedule FSH blood test"
+    },
+    {
+      "clinical_reason": "To discuss your low AMH level and its implications for your fertility, and to plan next steps in your care related to Diminished Ovarian Reserve.",
+      "priority": "high",
+      "status": "pending",
+      "task": "Initial consultation to review AMH results"
+    }
+  ],
+  "current_phase": "Initial Assessment",
+  "missing_data": [
+    "Follicle stimulating hormone [Units/volume] in Serum or Plasma"
+  ]
+}
