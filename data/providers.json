@@ -1,0 +1,26 @@
+[
+  {
+    "id": "prov-001",
+    "name": "Dr. Sarah Chen, MD",
+    "specialty": "Reproductive Endocrinologist (REI)",
+    "location": "Boston, MA",
+    "focus_areas": ["Diminished Ovarian Reserve", "IVF", "Egg Freezing"],
+    "insurance_network": ["Aetna", "BlueCross", "Cigna"]
+  },
+  {
+    "id": "prov-002",
+    "name": "Dr. Marcus Thorne, MD",
+    "specialty": "Reproductive Endocrinologist (REI)",
+    "location": "New York, NY",
+    "focus_areas": ["Male Factor Infertility", "Surrogacy"],
+    "insurance_network": ["Aetna", "UnitedHealthcare"]
+  },
+  {
+    "id": "prov-003",
+    "name": "Elena Rostova, LCSW",
+    "specialty": "Fertility Therapist",
+    "location": "Telehealth (Licensed in MA)",
+    "focus_areas": ["Infertility Trauma", "Grief Counseling", "Anxiety"],
+    "insurance_network": ["Out of Network", "BlueCross"]
+  }
+]

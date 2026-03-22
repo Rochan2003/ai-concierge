@@ -56,6 +56,26 @@ if view_mode == "Patient Portal (AI Concierge)":
                         st.write(f"**Priority:** {item['priority'].title()}")
                         st.write(f"**Why this is needed:** {item['clinical_reason']}")
 
+        # --- PROVIDER MATCHING UI ---
+        st.divider()
+        st.subheader("🩺 Provider Match")
+        st.info("The AI Matching Agent ranks providers based on your diagnosis, location, and care stage.")
+
+        if st.button("Find My Care Team"):
+            with st.spinner("Scanning provider network..."):
+                from provider_matching import ProviderMatchingAgent
+
+                matcher = ProviderMatchingAgent()
+                match_json_str = matcher.find_best_matches()
+                match_data = json.loads(match_json_str)
+
+                for provider in match_data['matches']:
+                    st.metric(label=f"{provider['provider_name']} ({provider['specialty']})",
+                              value=f"{provider['match_score']}% Match")
+                    st.write(f"**Why:** {provider['reason']}")
+                    st.caption(f"**Next Step:** {provider['next_step']}")
+                    st.write("---")
+
     # --- RIGHT COLUMN: The Empathy Interceptor (Chat) ---
     with col2:
         st.subheader("💬 AI Care Concierge")
